@@ -14,7 +14,6 @@
 		C61E8D15225D933200DCD481 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61E8D13225D933200DCD481 /* LaunchScreen.storyboard */; };
 		C61E8D20225D933300DCD481 /* DDLoadHudDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E8D1F225D933300DCD481 /* DDLoadHudDemoTests.swift */; };
 		C61E8D2B225D933300DCD481 /* DDLoadHudDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E8D2A225D933300DCD481 /* DDLoadHudDemoUITests.swift */; };
-		C61E8D40225D9EB600DCD481 /* DDLoadHudManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61E8D3F225D9EB600DCD481 /* DDLoadHudManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +47,6 @@
 		C61E8D26225D933300DCD481 /* DDLoadHudDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DDLoadHudDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C61E8D2A225D933300DCD481 /* DDLoadHudDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDLoadHudDemoUITests.swift; sourceTree = "<group>"; };
 		C61E8D2C225D933300DCD481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C61E8D3F225D9EB600DCD481 /* DDLoadHudManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDLoadHudManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +77,6 @@
 		C61E8CFE225D933100DCD481 = {
 			isa = PBXGroup;
 			children = (
-				C61E8D3E225D9E9C00DCD481 /* DDLoadHud */,
-				C61E8D3D225D9E8700DCD481 /* New Group */,
 				C61E8D09225D933100DCD481 /* DDLoadHudDemo */,
 				C61E8D1E225D933300DCD481 /* DDLoadHudDemoTests */,
 				C61E8D29225D933300DCD481 /* DDLoadHudDemoUITests */,
@@ -127,21 +123,6 @@
 				C61E8D2C225D933300DCD481 /* Info.plist */,
 			);
 			path = DDLoadHudDemoUITests;
-			sourceTree = "<group>";
-		};
-		C61E8D3D225D9E8700DCD481 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
-		C61E8D3E225D9E9C00DCD481 /* DDLoadHud */ = {
-			isa = PBXGroup;
-			children = (
-				C61E8D3F225D9EB600DCD481 /* DDLoadHudManager.swift */,
-			);
-			path = DDLoadHud;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,7 +257,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C61E8D0D225D933100DCD481 /* ViewController.swift in Sources */,
-				C61E8D40225D9EB600DCD481 /* DDLoadHudManager.swift in Sources */,
 				C61E8D0B225D933100DCD481 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,7 +363,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -438,7 +418,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
