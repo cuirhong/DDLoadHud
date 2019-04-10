@@ -10,8 +10,7 @@ s.license     = { :type => "MIT", :file => "LICENSE" }
 
 s.platform = :ios, '9.0'
 s.requires_arc = true
-s.source_files = 'DDLoadHud/*'
-s.public_header_files = 'DDLoadHud/*.swift'
+s.source_files = 'DDLoadHud/*.swift'
 
 s.ios.deployment_target = '7.0'
 end
