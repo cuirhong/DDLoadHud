@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name        = 'DDLoadHud'
-s.version     = '0.1.3'
+s.version     = '1.0.0'
 s.authors     = { 'davis' => 'cuirhong@126.com' }
 s.homepage    = 'https://github.com/cuirhong/DDLoadHud'
 s.summary     = 'a load hud for wechat video.'
