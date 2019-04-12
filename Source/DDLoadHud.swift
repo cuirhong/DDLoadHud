@@ -80,7 +80,7 @@ open class DDLoadHud:UIView  {
         rotationAnim.repeatCount = MAXFLOAT // 重复次数
         rotationAnim.duration = 1/animationSpeed // 一圈所需要的时间
         rotationAnim.isRemovedOnCompletion = false //默认是true，切换到其他控制器再回来，动画效果会消失，需要设置成false，动画就不会停了
-        progressDrawingview?.layer.add(rotationAnim, forKey: nil) // 给需要旋转的view增加动画
+        progressDrawingview?.layer.add(rotationAnim, forKey: "transform.rotation.z") // 给需要旋转的view增加动画
         
     }
     
@@ -90,10 +90,18 @@ open class DDLoadHud:UIView  {
         progressDrawingview?.layer.removeAllAnimations()
     }
     
+    // MARK:是否正在动画
+    open func isAnimation()->Bool{
+        return ((progressDrawingview?.layer.animation(forKey: "transform.rotation.z")) != nil)
+    }
+    
     
     fileprivate var bottomArcView:DrawingToolView? = nil
     
     fileprivate  var progressDrawingview:DrawingToolView? = nil
+    
+    
+    
     
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
