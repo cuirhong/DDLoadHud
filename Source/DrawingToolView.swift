@@ -27,8 +27,16 @@ class DrawingToolView:UIView {
     
     convenience init(drawParams:[DrawingParams]) {
         self.init(frame: CGRect.zero)
+        resetDrawingParams(drawParams)
+        
+    }
+    
+    // MARK:重置绘画参数
+    func resetDrawingParams(_ drawParams:[DrawingParams]){
         self.drawingParams = drawParams
-        backgroundColor = UIColor.clear
+         backgroundColor = UIColor.clear
+        setNeedsDisplay()
+        
     }
     
     
